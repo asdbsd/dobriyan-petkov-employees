@@ -20,6 +20,11 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 
 ![home-view](https://iili.io/HG2VTjj.jpg)
 
+**Matched Employees View - Sorted from highest to lowest days**
+<br/>
+
+![matched-employees-view](https://iili.io/HG2VuZx.jpg)
+
 **Max 5MB View**
 <br/>
 
@@ -35,7 +40,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 
 ![multiple-file-view](https://iili.io/HG2VITb.jpg)
 
-**Matched Employees View - Sorted from highest to lowest days**
+**Not .csv view**
 <br/>
 
-![matched-employees-view](https://iili.io/HG2VuZx.jpg)
+![not-csv-view](https://iili.io/HG2Dz1R.jpg)
