@@ -7,10 +7,21 @@
   <title>Upload CSV</title>
 </head>
 <body>
-  <div class="content text-center">
+  <div class="content text-center  my-5">
     <h2>UPLOAD CSV</h2>
-    <app-upload></app-upload>
-  </div>
+    <div class="row">
+      <div class="col-md-4"></div>
+      <div class="col-md-4">
+        <input accept=".csv" class="form-control" (change)="onFileSelected($event)" type="file"
+        name="csvFile" >
+      </div>
+      <div class="col-md-4"></div>
+    </div>
 
+
+    <app-project-pairs *ngIf="rowsArray && rowsArray.length > 0">;
+      {{rowsArray}}
+    </app-project-pairs>
+  </div>
 </body>
 </html>
