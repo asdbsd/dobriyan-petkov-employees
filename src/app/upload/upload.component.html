@@ -1,1 +1,21 @@
+<div class="row">
+  <div class="col-md-4"></div>
+  <div class="col-md-4">
+    <app-error *ngIf="errors.length > 0" [errors]="errors"></app-error>
+    <h2>UPLOAD CSV</h2>
+    <input accept=".csv" class="form-control" (change)="onFileSelected($event)" type="file" name="csvFile">
 
+    <app-project-pairs *ngIf="csvData" [csvData]="csvData"></app-project-pairs>
+
+    <div *ngIf="csvData === undefined" class="row my-5 text-start">
+      <div class="col-md-12">
+        <h5 class="card-title secondary">Supported formats</h5>
+        <hr>
+        <p><b>DateFrom: </b><i>"yyyy/mm/dd"; "yyyy-mm-dd"</i></p>
+        <p><b>DateTo: </b><i>"yyyy/mm/dd"; "yyyy-mm-dd", "NULL"</i></p>
+      </div>
+    </div>
+
+  </div>
+  <div class="col-md-4"></div>
+</div>

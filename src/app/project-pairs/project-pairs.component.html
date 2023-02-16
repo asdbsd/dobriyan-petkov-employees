@@ -1,1 +1,21 @@
-<p>project-pairs works!</p>
+
+<table *ngIf="csvData" class="table table-striped my-3">
+	<thead>
+		<tr>
+			<th scope="col" sortable="employee1">Employee ID #1</th>
+			<th scope="col" sortable="employee2">Employee ID #2</th>
+			<th scope="col" sortable="projectId">Project ID</th>
+			<th scope="col" sortable="days-worked">Days worked</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr *ngFor="let project of csvData">
+			<td>
+				{{project.firstEmployeeID}}
+			</td>
+			<td>{{project.secondEmployeeId}}</td>
+			<td>{{project.projectID}}</td>
+			<td>{{project.daysWorked}}</td>
+		</tr>
+	</tbody>
+</table>
