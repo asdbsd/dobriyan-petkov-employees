@@ -34,10 +34,12 @@ export class UploadComponent {
     }
 
     const file = event.srcElement.files[0];
-    this.csvParser.parse(file, { header: true, delimiter: ',' })
+    this.csvParser.parse(file, { header: false, delimiter: ',' })
       .subscribe({
         next: (data) => {
-          const filteredData = (data as any[]).filter(obj => obj?.ProjectID);
+          const filteredData = (data as any[])
+            .map(arr => ({ "EmpID": arr[0], "ProjectID": arr[1], "DateFrom": arr[2], "DateTo": arr[3] }))
+              .filter(obj => obj?.ProjectID);
           if(filteredData.length < 1) {
             this.errors.push('There are no employees who worked on same project in provided file. Please try another file.');
             event.target.value = '';
