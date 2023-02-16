@@ -144,6 +144,7 @@ export class UploadComponent {
   }
 
   validateInput(event: any): boolean {
+    console.log();
     if (event.srcElement.files.length > 1) {
       this.errors.push('Can\'t upload more than 1 file');
       event.target.value = '';
@@ -155,6 +156,15 @@ export class UploadComponent {
       event.target.value = '';
       return false;
     };
+
+    if(event.target.value.endsWith('.csv') !== true) {
+      this.errors.push('Please make sure that you are uploading .csv files!');
+      event.target.value = '';
+      return false;
+    }
+
+
+
 
     return true;
   }
