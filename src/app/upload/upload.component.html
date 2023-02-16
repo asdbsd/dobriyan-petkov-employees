@@ -7,9 +7,9 @@
 
     <app-project-pairs *ngIf="csvData" [csvData]="csvData"></app-project-pairs>
 
-    <div *ngIf="csvData === undefined" class="row my-5 text-start">
+    <div *ngIf="csvData === undefined" class="row my-5 text-start text-secondary">
       <div class="col-md-12">
-        <h5 class="card-title secondary">Supported formats</h5>
+        <h5 class="card-title">Supported formats</h5>
         <hr>
         <p><b>DateFrom: </b><i>"yyyy/mm/dd"; "yyyy-mm-dd"</i></p>
         <p><b>DateTo: </b><i>"yyyy/mm/dd"; "yyyy-mm-dd", "NULL"</i></p>
