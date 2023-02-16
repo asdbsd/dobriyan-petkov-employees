@@ -1,28 +1,41 @@
-# DobriyanPetkovEmployees
+# Dobriyan-Petkov-Employees
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.3.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.6.
 
-## Development server
+The project is using ng-bootstrap & ng-csv-parser libraries
+
+# INSTALLATION STEPS
+git clone git@github.com:asdbsd/dobriyan-petkov-employees.git
+
+cd dobriyan-petkov-employees
+
+npm install
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+# VIEWS
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+**Home View**
+<br/>
 
-## Build
+![home-view](https://iili.io/HG2VTjj.jpg)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+**Max 5MB View**
+<br/>
 
-## Running unit tests
+![max-5mb-view](https://iili.io/HG2VRCQ.jpg)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+**No Project Matching Employees View**
+<br/>
 
-## Running end-to-end tests
+![no-common-projects-viee](https://iili.io/HG2V5GV.jpg)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+**Multiple file Upload View**
+<br/>
 
-## Further help
+![multiple-file-view](https://iili.io/HG2VITb.jpg)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-"# dobriyan-petkov-employees" 
+**Matched Employees View - Sorted from highest to lowest days**
+<br/>
+
+![matched-employees-view](https://iili.io/HG2VuZx.jpg)
