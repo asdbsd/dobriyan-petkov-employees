@@ -1,4 +1,4 @@
-import { Component, OnChanges, SimpleChanges } from '@angular/core';
+import { Component } from '@angular/core';
 import { NgxCsvParser, NgxCSVParserError } from 'ngx-csv-parser'
 import { ICommonProjectsData, ICsvData } from 'src/shared/iCsvData';
 
@@ -7,20 +7,13 @@ import { ICommonProjectsData, ICsvData } from 'src/shared/iCsvData';
   templateUrl: './upload.component.html',
   styleUrls: ['./upload.component.scss']
 })
-export class UploadComponent implements OnChanges {
+export class UploadComponent {
   errors: any[] = [];
   isCsvSelected: boolean = false;
 
   constructor(
     private csvParser: NgxCsvParser
   ) { }
-
-  ngOnChanges(changes: SimpleChanges): void {
-    console.log(changes);
-      if(changes) {
-        this.isCsvSelected = !!this.isCsvSelected;
-      }
-  }
 
   csvData: ICommonProjectsData[] | undefined = undefined;
 
